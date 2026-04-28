@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.BankingBuddy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Dark mode theme -->
+    </style>
+</resources>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF2FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Activities"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ================= AIRTIME ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnAirtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy Airtime"
+                android:textStyle="bold"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:id="@+id/airtimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount (e.g. 20)"
+                    android:inputType="number"
+                    android:backgroundTint="#90CAF9"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone number"
+                    android:inputType="phone"
+                    android:backgroundTint="#90CAF9"/>
+
+                <Button
+                    android:id="@+id/buyAirtimeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Airtime"
+                    android:backgroundTint="#42A5F5"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================= VOUCHER ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnVoucher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy Voucher"
+                android:textStyle="bold"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:id="@+id/voucherLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Voucher amount"
+                    android:inputType="number"
+                    android:backgroundTint="#90CAF9"/>
+
+                <Button
+                    android:id="@+id/buyVoucherBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Voucher"
+                    android:backgroundTint="#42A5F5"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================= CASH SEND ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Cash"
+                android:textStyle="bold"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:id="@+id/cashLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Recipient number"
+                    android:inputType="phone"
+                    android:backgroundTint="#90CAF9"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:inputType="number"
+                    android:backgroundTint="#90CAF9"/>
+
+                <Button
+                    android:id="@+id/sendCashBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Cash"
+                    android:backgroundTint="#42A5F5"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================= BILLS ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnBills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay Bills"
+                android:textStyle="bold"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:id="@+id/billLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bill reference"
+                    android:backgroundTint="#90CAF9"/>
+
+                <Button
+                    android:id="@+id/payBillBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Bill"
+                    android:backgroundTint="#42A5F5"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================= BUDGET ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track My Budget"
+                android:textStyle="bold"
+                android:backgroundTint="#0D47A1"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:id="@+id/budgetLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <!-- 💰 MAIN BUDGET -->
+                <EditText
+                    android:id="@+id/etBudget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Monthly budget goal"
+                    android:inputType="numberDecimal"
+                    android:backgroundTint="#90CAF9"/>
+
+                <!-- 🟡 MINIMUM GOAL -->
+                <EditText
+                    android:id="@+id/etMinGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Minimum spending goal"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#BBDEFB"/>
+
+                <!-- 🔴 MAXIMUM LIMIT -->
+                <EditText
+                    android:id="@+id/etMaxGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Maximum spending limit"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#BBDEFB"/>
+
+                <!-- SAVE BUTTON -->
+                <Button
+                    android:id="@+id/trackBudgetBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save Budget"
+                    android:backgroundTint="#1565C0"
+                    android:textColor="#FFFFFF"/>
+
+                <!-- RESULTS -->
+                <TextView
+                    android:id="@+id/tvTotalSpent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Spent: R0"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvRemaining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remaining: R0"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FF5252"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- ================= STATEMENT ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:padding="14dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download Statement"
+                android:textStyle="bold"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:id="@+id/statementLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No transactions yet (demo mode)"
+                    android:textColor="#555"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
