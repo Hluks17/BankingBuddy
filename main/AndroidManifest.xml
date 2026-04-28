@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bankingbuddy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Banking Buddy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BankingBuddy">
+        <activity
+            android:name=".UserManager"
+            android:exported="false" />
+        <activity
+            android:name=".BudgetGoalsManager"
+            android:exported="false" />
+        <activity
+            android:name=".DailyActivitiesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpendingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InvestmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" /> <!-- Homepage Activity -->
+        <activity
+            android:name=".Homepage"
+            android:exported="false" /> <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" /> <!-- Register Activity (LAUNCHER - FIRST SCREEN) -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

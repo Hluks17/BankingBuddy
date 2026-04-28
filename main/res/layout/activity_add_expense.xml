@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0A2540"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- IMAGE PREVIEW -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="10dp" />
+
+        <!-- PICK IMAGE BUTTON -->
+        <Button
+            android:id="@+id/btnPickImage"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Upload Receipt Image"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- AMOUNT -->
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Amount (R)"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/edit_text"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- DESCRIPTION -->
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Description"
+            android:background="@android:drawable/edit_text"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- START DATE -->
+        <EditText
+            android:id="@+id/editStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Select Start Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@android:drawable/edit_text"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- START TIME -->
+        <EditText
+            android:id="@+id/editStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Select Start Time"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@android:drawable/edit_text"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- END TIME -->
+        <EditText
+            android:id="@+id/editEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Select End Time"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@android:drawable/edit_text"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- CATEGORY -->
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/btnSaveExpense"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Save Expense"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:backgroundTint="#1B6CA8" />
+
+    </LinearLayout>
+
+</ScrollView>

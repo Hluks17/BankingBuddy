@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9">
+
+    <LinearLayout
+        android:id="@+id/savingsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Savings Accounts"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0A2540"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- MAIN ACCOUNT CARD -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/account1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- ICON -->
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#1B6CA8"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/savings"
+                        app:tint="#FFFFFF"/>
+                </LinearLayout>
+
+                <!-- TEXT -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Main Savings"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#0A2540"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Access Anytime"
+                        android:textColor="#777777"/>
+                </LinearLayout>
+
+                <!-- ARROW -->
+                <TextView
+                    android:id="@+id/dropArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textSize="18sp"
+                    android:textColor="#1B6CA8"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- DROPDOWN CONTENT -->
+        <LinearLayout
+            android:id="@+id/dropContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:background="#FFFFFF">
+
+            <!-- BALANCE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balance: R 12,500"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#1B6CA8"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- TRANSACTION CONTAINER -->
+            <LinearLayout
+                android:id="@+id/transactionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+        <!-- ADD BUTTON -->
+        <Button
+            android:id="@+id/btnAddAccount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Add New Account"
+            android:backgroundTint="#1B6CA8"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Budget Buddy"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1B6CA8"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- CARD 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is Budget Buddy?"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2540"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Budget Buddy is a smart financial app designed to help users manage spending, track expenses, and build strong saving habits."
+                    android:layout_marginTop="8dp"
+                    android:textColor="#455A64"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How it works"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2540"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Users can track their expenses, create budgets, lock savings, and monitor their financial progress using visual insights."
+                    android:layout_marginTop="8dp"
+                    android:textColor="#455A64"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Mission"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2540"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We aim to promote financial discipline and help users achieve long-term savings goals through smart tools and gamification."
+                    android:layout_marginTop="8dp"
+                    android:textColor="#455A64"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Security"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2540"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All user data is protected with strong encryption and secure authentication systems to ensure privacy and safety."
+                    android:layout_marginTop="8dp"
+                    android:textColor="#455A64"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ================= FOOTER ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0A2540"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banking Buddy"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save • Spend • Gain Right"
+                android:textColor="#BBDEFB"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Helping you manage money smarter every day with simple tools and insights."
+                android:textColor="#E3F2FD"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1565C0"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2026 Banking Buddy. All rights reserved."
+                android:textColor="#90CAF9"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

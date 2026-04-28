@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY INFORMATION"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0A2540"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ================= CONTACT DETAILS ================= -->
+        <LinearLayout
+            android:id="@+id/cardContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txtContactHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Details ▼"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:id="@+id/contactBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone: 081 234 5678"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: user@email.com"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================= EMPLOYMENT DETAILS ================= -->
+        <LinearLayout
+            android:id="@+id/cardEmployment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txtEmploymentHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employment Details ▼"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:id="@+id/employmentBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company: Banking Buddy Ltd"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Position: Junior Developer"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================= INCOME DETAILS ================= -->
+        <LinearLayout
+            android:id="@+id/cardIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txtIncomeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Income Details ▼"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:id="@+id/incomeBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Salary: R15,000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bonus: R2,000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================= PERSONAL DETAILS ================= -->
+        <LinearLayout
+            android:id="@+id/cardPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txtPersonalHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Details ▼"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:id="@+id/personalBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Employer 56"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age: 25"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

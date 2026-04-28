@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:id="@+id/contactLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1B6CA8"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- SOCIALS CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Follow Us"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2540"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram: @BudgetBuddy"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter: @BudgetBuddy"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LinkedIn: Budget Buddy SA"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TikTok: @BudgetBuddy"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BRANCHES CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Branches"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2540"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Johannesburg (Braamfontein)"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Durban"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cape Town"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CONTACT NUMBERS CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call Us"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2540"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="011 234 5678"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="011 876 5432"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- WORKING HOURS CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Working Hours"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#0A2540"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monday - Friday: 08:00 - 17:00"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday: 09:00 - 13:00"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday: Closed"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ================= FOOTER ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0A2540"
+            android:padding="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banking Buddy"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save • Spend • Gain Right"
+                android:textColor="#BBDEFB"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Banking Buddy helps you manage your finances easily. Track your spending, manage budgets, and perform daily banking activities all in one place."
+                android:textColor="#E3F2FD"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1565C0"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2026 Banking Buddy. All rights reserved."
+                android:textColor="#90CAF9"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
